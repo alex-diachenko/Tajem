@@ -1,0 +1,179 @@
+footer {
+    padding: 81px 0 45px 0;
+    background: url('../images/background5.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+footer:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+        opacity: 0.85;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    } 
+footer .container>div {
+    width: 33.3%;
+}
+footer .container {
+    padding: 0 0 72px 0;
+    display: flex;
+    img {
+        width: auto;
+    }
+    .info {
+        padding-right: 20px;
+        .icon {
+            @include flex(row, center);
+            a {
+                background-image: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                @include font(30px, 300, auto);
+                margin-left: 12px;
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        };
+        p {
+            @include font(14px, 300, 26px);
+            letter-spacing: 0.35px;
+        }
+    };
+    .contacts {
+        padding-right: 20px;
+        h3 {
+            @include font(15px, 400, 26px);
+            letter-spacing: 0.75px;
+            margin: 26px 0 32px 0; 
+        };
+        .cont_info {
+            @include flex(space-between, flex-start);
+            p {
+                margin: 0 0 30px 15px;
+                text-align: left;
+                @include font(14px, 400, 26px);
+                letter-spacing: 0.35px;
+            }
+        }
+        .cont_info2 {
+            justify-content: flex-start;
+            a {
+                margin-left: 15px;
+                color: #ffffff;
+                transition: 0.7s;
+                &:hover {
+                    color: #00e0d0;
+                }
+            }
+        }
+    }
+}
+
+footer .social {
+        h4 {
+            @include font(15px, 400, 26px);
+            letter-spacing: 0.75px;
+            margin-top: 23px;
+            margin-bottom: 38px;
+        }; 
+        form {
+            @include flex(space-between, initial);
+            .subscribe {
+                width: 76%;
+                padding: 12px 15px;
+                background: transparent;
+                border: 2px solid #ffffff;
+                opacity:0.5;
+                &:focus {
+                    outline: none;
+                    border-color: #00e0d0;
+                }
+            };
+            .send {
+                width: 70px;
+                height: 45px;
+                border: 1px solid transparent;
+                background-color: #ffffff;
+                transition: 0.7s;
+                &:hover {
+                    border-color: #00e0d0;
+                    color: #00e0d0;
+                }
+                i {
+                    color: #000;
+                    font-size: 22px;
+                    padding: 11px 25px;
+                    transition: 0.7s;
+                    &:hover {
+                        color: #00e0d0;
+                    }
+                }
+            }
+            input[type="email"]::placeholder {
+                color: #ffffff;
+                opacity: 0.75;
+                @include font(14px, 300, 26px);
+                letter-spacing: 0.7px;
+            } 
+        };
+        .list-social {
+            list-style: none;
+            margin-top: 25px;
+            @include flex(flex-start, initial);
+            padding: 0;
+            .list-item {
+                a{
+                    @include flex(center, center);
+                    margin-right: 8px;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    border: 1px solid #ffffff;
+                    i {
+                        color: #ffffff;
+                        padding: 10px;
+                    };
+                    &:hover {
+                        border: 1px solid #00e0d0;
+                        i:hover{
+                            color: #00e0d0;
+                        }
+                    }
+                };
+            }
+        }
+    }
+footer .bottom-part {
+    max-width: 960px;
+    margin: 0 auto;
+    @include flex(space-between, initial);
+    .help-info{
+        list-style: none;
+        padding-left: 0;
+        @include flex(flex-start, initial);
+        a {
+            color: #ffffff;
+            font-family: "Roboto";
+            @include font(14px, 400, 26px);
+            letter-spacing: 0.35px;
+            margin-right: 35px;
+            &:hover {
+                color: #00e0d0;
+            }
+        }
+    };
+    .copy {
+        color: #ffffff;
+        font-family: "Roboto";
+        @include font(14px, 400, 26px);
+        letter-spacing: 0.35px;
+    };
+}

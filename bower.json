@@ -1,0 +1,21 @@
+{
+  "name": "tajem",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Alexander Diachenko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/alex-diachenko/Tajem.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
+}

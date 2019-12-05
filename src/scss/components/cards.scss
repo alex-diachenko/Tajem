@@ -1,0 +1,37 @@
+.fourth_section .container .about {
+    @include flex(space-between, initial);
+    flex-wrap: wrap;
+    margin: 60px 0 90px 0;
+    overflow: hidden;
+    .content {
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+        width: 33.3%;
+        padding: 48px 20px;
+        margin-bottom: -2px;
+        margin-right: -2px;  
+        @include flex(center, center);
+        flex-wrap: wrap;
+        i{
+            width: 100%;
+            font-size: 48px;
+            background-image: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        };
+        h3{
+            width: 100%;
+            color: #413d4b;
+            margin: 35px 0 20px 0;
+        }
+        p{
+            width: 100%;
+            opacity: 0.75;
+            color: #333333;
+            line-height: 22px;
+            letter-spacing: 0.7px;
+        }
+    }
+}

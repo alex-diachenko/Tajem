@@ -1,0 +1,58 @@
+.eight_section .container{
+    .feedback {
+        width: 50%;
+        flex-wrap: nowrap;
+        form {
+            .theme {
+                width: 100%;
+                padding: 15px 10px;
+                border: 1px solid #000000;
+                opacity: 0.5;
+            };
+            .text {
+                width: 100%;
+                padding: 15px 10px;
+                height: 200px;
+                border: 1px solid #000000;
+                opacity: 0.5;
+                margin: 12px 0;
+                &:focus {
+                    outline: none;
+                    border: 1px solid #00e0d0;
+                }
+            };
+            input {
+                margin: 12px 0;
+                &:focus {
+                    outline: none;
+                    border: 1px solid #00e0d0;
+                }
+            };
+            .submit {
+                color: #00e0d0;
+                border: 1px solid #00e0d0;
+                font-family: "Hammersmith One";
+                font-size: 16px;
+                padding: 14px 30px;
+                margin-bottom: 50px;
+                &:hover {
+                    color: grey;
+                    border: 1px solid gray;
+                    transition: 0.7s ease;
+                }
+            }
+        }
+    }
+    .clients {
+        width: 50%;
+        padding-left: 50px;
+    }
+}
+input[type="text"]::placeholder {
+    color: #413d4b;
+    opacity: 0.5;
+}
+input[type="email"]::placeholder {
+    color: #413d4b;
+    opacity: 0.9;
+}
